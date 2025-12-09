@@ -1,0 +1,89 @@
+openapi: 3.0.4
+info:
+  title: IMEI Generator
+  description: IMEI Generator creates valid International Mobile Equipment Identity (IMEI) numbers with proper Luhn checksum validation for mobile devices.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/imeigenerator:
+    get:
+      summary: Generate IMEI
+      description: IMEI Generator creates valid International Mobile Equipment Identity (IMEI) numbers with proper Luhn checksum validation for mobile devices.
+      operationId: imeigenerator
+      parameters:
+      - name: brand
+        in: query
+        schema:
+          type: string
+        required: false
+        description: Filter by manufacturer brand (e.g., Samsung, Apple, Nokia)
+        example: Samsung
+      - name: count
+        default: '1'
+        in: query
+        schema:
+          type: number
+        required: false
+        description: Number of IMEIs to generate (1-5)
+        example: '2'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  count: 2
+                  brand: Samsung
+                  imeis:
+                  - imei: '355828061787269'
+                    tac: '35582806'
+                    manufacturer: Samsung
+                    model: SM-G901F
+                    serial: '178726'
+                    checksum: '9'
+                    isValid: true
+                  - imei: '354862004733834'
+                    tac: '35486200'
+                    manufacturer: Samsung
+                    model: SGH-E630
+                    serial: '473383'
+                    checksum: '4'
+                    isValid: true
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
