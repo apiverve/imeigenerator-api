@@ -1,0 +1,35 @@
+{
+  "name": "@apiverve/imeigenerator",
+  "version": "1.1.12",
+  "description": "IMEI Generator creates valid International Mobile Equipment Identity (IMEI) numbers with proper Luhn checksum validation for mobile devices.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "example": "node examples/basic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/imeigenerator-api.git",
+    "directory": "npm"
+  },
+  "keywords": [
+    "imei generator", "mobile identifier", "device identifier", "imei number", "luhn checksum"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/imeigenerator-api/issues"
+  },
+  "homepage": "https://apiverve.com/marketplace/imeigenerator?utm_source=npm",
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "promise": "^8.3.0",
+    "axios": "1.13.2"
+  }
+}
