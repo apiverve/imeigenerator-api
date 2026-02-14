@@ -13,13 +13,7 @@ const API_URL = 'https://api.apiverve.com/v1/imeigenerator';
  */
 async function callIMEIGeneratorAPI() {
   try {
-    // Query parameters
-    const params &#x3D; new URLSearchParams({
-            brand: &#x27;Samsung&#x27;,
-            count: 2
-        });
-
-    const response = await fetch(`${API_URL}?${params}`, {
+    const response = await fetch(API_URL, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
