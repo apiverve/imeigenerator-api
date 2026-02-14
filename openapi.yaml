@@ -1,40 +1,41 @@
 openapi: 3.0.4
 info:
   title: IMEI Generator
-  description: IMEI Generator creates valid International Mobile Equipment Identity (IMEI) numbers with proper Luhn checksum validation for mobile devices.
+  description: >-
+    IMEI Generator creates valid International Mobile Equipment Identity (IMEI)
+    numbers with proper Luhn checksum validation for mobile devices.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/imeigenerator:
     get:
       summary: Generate IMEI
-      description: IMEI Generator creates valid International Mobile Equipment Identity (IMEI) numbers with proper Luhn checksum validation for mobile devices.
+      description: Generate valid IMEI numbers
       operationId: imeigenerator
       parameters:
-      - name: brand
-        in: query
-        schema:
-          type: string
-        required: false
-        description: Filter by manufacturer brand (e.g., Samsung, Apple, Nokia)
-        example: Samsung
-      - name: count
-        default: '1'
-        in: query
-        schema:
-          type: number
-        required: false
-        description: Number of IMEIs to generate (1-5)
-        example: '2'
+        - name: brand
+          in: query
+          schema:
+            type: string
+          required: false
+          description: Filter by manufacturer brand (e.g., Samsung, Apple, Nokia)
+          example: Samsung
+        - name: count
+          in: query
+          schema:
+            type: integer
+          required: false
+          description: Number of IMEIs to generate
+          example: 2
       responses:
         '200':
           description: Successful Response
@@ -50,35 +51,35 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   count: 2
                   brand: Samsung
                   imeis:
-                  - imei: '355828061787269'
-                    tac: '35582806'
-                    manufacturer: Samsung
-                    model: SM-G901F
-                    serial: '178726'
-                    checksum: '9'
-                    isValid: true
-                  - imei: '354862004733834'
-                    tac: '35486200'
-                    manufacturer: Samsung
-                    model: SGH-E630
-                    serial: '473383'
-                    checksum: '4'
-                    isValid: true
+                    - imei: '358398048517203'
+                      tac: '35839804'
+                      manufacturer: Samsung
+                      model: Galaxy Xcover
+                      serial: '851720'
+                      checksum: '3'
+                      isValid: true
+                    - imei: '359040029448038'
+                      tac: '35904002'
+                      manufacturer: Samsung
+                      model: SGH-B130
+                      serial: '944803'
+                      checksum: '8'
+                      isValid: true
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -86,4 +87,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
