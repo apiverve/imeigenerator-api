@@ -16,7 +16,7 @@ const api = new imeigeneratorAPI({
 // Example query
 var query = {
   brand: "Samsung",
-  count: 2
+  count: 1
 };
 
 // Make the API request using callback
