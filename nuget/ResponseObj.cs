@@ -45,7 +45,6 @@ namespace APIVerve.API.IMEIGenerator
         public string ImeiImei { get; set; }
 
         [JsonProperty("tac")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Tac { get; set; }
 
         [JsonProperty("manufacturer")]
@@ -55,11 +54,9 @@ namespace APIVerve.API.IMEIGenerator
         public string Model { get; set; }
 
         [JsonProperty("serial")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Serial { get; set; }
 
         [JsonProperty("checksum")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Checksum { get; set; }
 
         [JsonProperty("isValid")]
