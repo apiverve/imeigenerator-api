@@ -1,1 +1,3 @@
-from .apiClient import ImeigeneratorAPIClient
+from .apiClient import ImeigeneratorAPIClient, ImeigeneratorAPIClientError
+
+__all__ = ['ImeigeneratorAPIClient', 'ImeigeneratorAPIClientError']
