@@ -12,14 +12,12 @@ namespace APIVerve.API.IMEIGenerator
     {
         /// <summary>
         /// Filter by manufacturer brand (e.g., Samsung, Apple, Nokia)
-        /// Example: Samsung
         /// </summary>
         [JsonProperty("brand")]
         public string Brand { get; set; }
 
         /// <summary>
-        /// Number of IMEIs to generate (1-5)
-        /// Example: 2
+        /// Number of IMEIs to generate
         /// </summary>
         [JsonProperty("count")]
         public string Count { get; set; }
