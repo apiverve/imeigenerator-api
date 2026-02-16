@@ -44,7 +44,10 @@ from apiverve_imeigenerator.apiClient import ImeigeneratorAPIClient
 # Initialize the client with your APIVerve API key
 api = ImeigeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "brand": "Samsung", "count": 1 }
+query = {
+    "brand": "Samsung",
+    "count": 1
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "brand": "Samsung", "count": 1 }
+query = {
+    "brand": "Samsung",
+    "count": 1
+}
 ```
 
 ###### Simple Request
@@ -141,7 +147,10 @@ from apiverve_imeigenerator.apiClient import ImeigeneratorAPIClient, Imeigenerat
 
 api = ImeigeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "brand": "Samsung", "count": 1 }
+query = {
+    "brand": "Samsung",
+    "count": 1
+}
 
 try:
     result = api.execute(query)
@@ -162,7 +171,10 @@ from apiverve_imeigenerator.apiClient import ImeigeneratorAPIClient, Imeigenerat
 
 api = ImeigeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "brand": "Samsung", "count": 1 }
+query = {
+    "brand": "Samsung",
+    "count": 1
+}
 
 try:
     result = api.execute(query)
@@ -196,7 +208,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_imeigenerator.apiClient import ImeigeneratorAPIClient, ImeigeneratorAPIClientError
 
-query = { "brand": "Samsung", "count": 1 }
+query = {
+    "brand": "Samsung",
+    "count": 1
+}
 
 # Using context manager ensures proper cleanup
 with ImeigeneratorAPIClient("[YOUR_API_KEY]") as api:
@@ -222,7 +237,10 @@ from apiverve_imeigenerator.apiClient import ImeigeneratorAPIClient
 # Enable debug mode
 api = ImeigeneratorAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "brand": "Samsung", "count": 1 }
+query = {
+    "brand": "Samsung",
+    "count": 1
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -237,8 +255,12 @@ from apiverve_imeigenerator.apiClient import ImeigeneratorAPIClient
 
 api = ImeigeneratorAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "brand": "Samsung",
+    "count": 1
+}
+
 try:
-    query = { "brand": "Samsung", "count": 1 }
     result = api.execute(query)
     print(result)
 finally:
