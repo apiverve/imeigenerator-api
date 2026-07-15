@@ -129,21 +129,21 @@ async function makeRequest() {
     "brand": "Samsung",
     "imeis": [
       {
-        "imei": "355828061787269",
-        "tac": "35582806",
+        "imei": "358398048517203",
+        "tac": "35839804",
         "manufacturer": "Samsung",
-        "model": "SM-G901F",
-        "serial": "178726",
-        "checksum": "9",
+        "model": "Galaxy Xcover",
+        "serial": "851720",
+        "checksum": "3",
         "isValid": true
       },
       {
-        "imei": "354862004733834",
-        "tac": "35486200",
+        "imei": "359040029448038",
+        "tac": "35904002",
         "manufacturer": "Samsung",
-        "model": "SGH-E630",
-        "serial": "473383",
-        "checksum": "4",
+        "model": "SGH-B130",
+        "serial": "944803",
+        "checksum": "8",
         "isValid": true
       }
     ]
