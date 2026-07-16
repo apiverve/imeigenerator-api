@@ -25,12 +25,15 @@ namespace APIVerve.API.IMEIGenerator
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("count")]
-        public long Count { get; set; }
+        public long? Count { get; set; }
 
         [JsonProperty("brand")]
         public string Brand { get; set; }
@@ -45,7 +48,7 @@ namespace APIVerve.API.IMEIGenerator
         public string ImeiImei { get; set; }
 
         [JsonProperty("tac")]
-        public long Tac { get; set; }
+        public long? Tac { get; set; }
 
         [JsonProperty("manufacturer")]
         public string Manufacturer { get; set; }
@@ -54,12 +57,24 @@ namespace APIVerve.API.IMEIGenerator
         public string Model { get; set; }
 
         [JsonProperty("serial")]
-        public long Serial { get; set; }
+        public long? Serial { get; set; }
 
         [JsonProperty("checksum")]
-        public long Checksum { get; set; }
+        public long? Checksum { get; set; }
 
         [JsonProperty("isValid")]
-        public bool IsValid { get; set; }
+        public bool? IsValid { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
