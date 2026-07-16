@@ -191,11 +191,49 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the IMEI Generator API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "count": 2,
+    "brand": "Samsung",
+    "imeis": [
+      {
+        "imei": "358398048517203",
+        "tac": "35839804",
+        "manufacturer": "Samsung",
+        "model": "Galaxy Xcover",
+        "serial": "851720",
+        "checksum": "3",
+        "isValid": true
+      },
+      {
+        "imei": "359040029448038",
+        "tac": "35904002",
+        "manufacturer": "Samsung",
+        "model": "SGH-B130",
+        "serial": "944803",
+        "checksum": "8",
+        "isValid": true
+      }
+    ]
+  }
 }
 ```
 
