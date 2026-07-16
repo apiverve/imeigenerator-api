@@ -20,6 +20,6 @@ namespace APIVerve.API.IMEIGenerator
         /// Number of IMEIs to generate
         /// </summary>
         [JsonProperty("count")]
-        public string Count { get; set; }
+        public int? Count { get; set; }
     }
 }
