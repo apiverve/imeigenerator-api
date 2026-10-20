@@ -1,13 +1,13 @@
-# [IMEI Generator API](https://apiverve.com/marketplace/imeigenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [IMEI Generator API](https://apiverve.com/marketplace/imeigenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
 IMEI Generator creates valid International Mobile Equipment Identity (IMEI) numbers with proper Luhn checksum validation for mobile devices.
 
 The IMEI Generator API provides a simple, reliable way to integrate imei generator functionality into your applications. Built for developers who need production-ready imei generator capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/imeigenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/imeigenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/imeigenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/imeigenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/imeigenerator-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [IMEI Generator API](https://apiverve.com/marketplace/imeigenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [IMEI Generator API](https://apiverve.com/marketplace/imeigenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/imeigenerator](https://docs.apiverve.com/ref/imeigenerator)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -241,7 +241,7 @@ A real response from the IMEI Generator API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [IMEI Generator API](https://apiverve.com/marketplace/imeigenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [IMEI Generator API](https://apiverve.com/marketplace/imeigenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

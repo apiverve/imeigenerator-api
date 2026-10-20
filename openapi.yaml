@@ -18,7 +18,7 @@ servers:
 paths:
   /v1/imeigenerator:
     get:
-      summary: Generate IMEI
+      summary: IMEI Generator
       description: Generate valid IMEI numbers
       operationId: imeigenerator
       parameters:
