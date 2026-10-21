@@ -1,7 +1,7 @@
 {
     "name": "apiverve/imeigenerator",
     "description": "IMEI Generator creates valid International Mobile Equipment Identity (IMEI) numbers with proper Luhn checksum validation for mobile devices.",
-    "version": "1.2.0",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -21,7 +21,7 @@
         "imei number",
         "luhn checksum"
     ],
-    "homepage": "https://apiverve.com/marketplace/imeigenerator?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/imeigenerator?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/imeigenerator",
