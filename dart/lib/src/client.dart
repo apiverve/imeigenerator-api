@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// IMEI Generator API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/imeigenerator?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/imeigenerator?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [brand] - Filter by manufacturer brand (e.g., Samsung, Apple, Nokia)

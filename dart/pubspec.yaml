@@ -1,7 +1,7 @@
 name: apiverve_imeigenerator
-description: IMEI Generator creates valid International Mobile Equipment Identity (IMEI) numbers with proper Luhn checksum validation for mobile devices.
-version: 1.1.14
-homepage: https://apiverve.com/marketplace/imeigenerator?utm_source=dart&utm_medium=homepage
+description: "IMEI Generator creates valid International Mobile Equipment Identity (IMEI) numbers with proper Luhn checksum validation for mobile devices."
+version: 1.2.4
+homepage: https://apiverve.com/marketplace/imeigenerator?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/imeigenerator-api/tree/main/dart
 
 environment:

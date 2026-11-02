@@ -5,7 +5,7 @@ IMEI Generator creates valid International Mobile Equipment Identity (IMEI) numb
 [![pub package](https://img.shields.io/pub/v/apiverve_imeigenerator.svg)](https://pub.dev/packages/apiverve_imeigenerator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [IMEI Generator API](https://apiverve.com/marketplace/imeigenerator?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [IMEI Generator API](https://apiverve.com/marketplace/imeigenerator?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_imeigenerator: ^1.1.14
+  apiverve_imeigenerator: ^1.2.4
 ```
 
 Then run:
@@ -57,21 +57,21 @@ void main() async {
     "brand": "Samsung",
     "imeis": [
       {
-        "imei": "355828061787269",
-        "tac": "35582806",
+        "imei": "358398048517203",
+        "tac": "35839804",
         "manufacturer": "Samsung",
-        "model": "SM-G901F",
-        "serial": "178726",
-        "checksum": "9",
+        "model": "Galaxy Xcover",
+        "serial": "851720",
+        "checksum": "3",
         "isValid": true
       },
       {
-        "imei": "354862004733834",
-        "tac": "35486200",
+        "imei": "359040029448038",
+        "tac": "35904002",
         "manufacturer": "Samsung",
-        "model": "SGH-E630",
-        "serial": "473383",
-        "checksum": "4",
+        "model": "SGH-B130",
+        "serial": "944803",
+        "checksum": "8",
         "isValid": true
       }
     ]
@@ -81,12 +81,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [IMEI Generator API](https://apiverve.com/marketplace/imeigenerator?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/imeigenerator](https://docs.apiverve.com/ref/imeigenerator?utm_source=dart&utm_medium=readme)
+- **API Home:** [IMEI Generator API](https://apiverve.com/marketplace/imeigenerator?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/imeigenerator](https://docs.apiverve.com/ref/imeigenerator?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -94,4 +94,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)
